@@ -26,16 +26,31 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: saltfreeint
 github_username:  SaltFreeInteractive
+show_excerpts: true
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # SASS settings
 sass:
   sass_dir: _sass
   style: compressed
+
+# Collections
+collections:
+  products:
+    output: true
+    permalink: /:collection/:path/
+  services:
+    output: true
+    permalink: /:collection/:path/
+  product-sections:
+  employees:
+    output: true
+    permalink: /:collection/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

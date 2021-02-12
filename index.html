@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<div class="bd-masthead">
+    <div class="container">
+        <div class="row align-items-lg-center">
+            <div class="col-8 mx-auto col-md-4 order-md-2 col-lg-5">
+              <img class="img-fluid mb-3 mb-md-0" src="/assets/images/banner-image.svg" alt="">
+            </div>
+            <div class="col-md-8 order-md-1 col-lg-7 text-center text-md-start">
+              <h1 class="mb-3">Salt Free Interactive</h1>
+              <p class="lead mb-4">
+                  Let us help make technology work for you! Whether it is a website, app or game, we have you covered. We can provide you with solutions that help you.
+              </p>
+      
+              <div class="d-flex flex-column flex-md-row">
+                <a href="/docs/5.0/getting-started/introduction/" class="btn btn-lg btn-black mb-3 me-md-3">Get started</a>
+                <a href="/docs/5.0/getting-started/download/" class="btn btn-lg btn-outline-black mb-3">Download</a>
+              </div>
+              <p class="text-muted mb-0">
+                Have an idea? <strong>We can help.</strong>
+                <span class="px-1">·</span>
+                <a href="#" class="link-secondary">Contact Us</a>
+              </p>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="container py-5" id="about">
+    <h1 class="mb-3">About Us</h1>
+    Salt Free Interactive is a software development studio in southeast Michigan with a passion for crafting awesome
+    experiences. Our mission is to help connect people with technology. We got our start in 2018 with our first game:
+    Stardust Hyperdrive.
+</div>
+
+<div class="container py-5" id="what-we-do">
+    <h1 class="mb-3">What We Do</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/600" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Games</h5>
+                    <p class="card-text">Our specialty. Games are an important part of modern media. We have a passion
+                        for
+                        crafting fun and engaging experiences for all to play.</p>
+                    <a href="#" class="btn btn-black">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/600" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Websites</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <a href="#" class="btn btn-black">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/600" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Software</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This card has even longer content than the first to show that equal height action.</p>
+                    <a href="#" class="btn btn-black">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/services" class="btn btn-black mt-5">See more of what we do</a>
+</div>
+
+<div class="container py-5" id="latest-blog-posts">
+    <h1 class="mb-3">Lastest Blog Posts</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for post in site.posts limit:3 %}
+        <div class="col">
+            <div class="card border-black h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <small class="text-muted">{{ post.date | date: date_format }}</small>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="#" class="btn btn-black mt-5">See the entire blog</a>
+</div>

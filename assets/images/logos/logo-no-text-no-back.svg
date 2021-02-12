@@ -15,10 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="Logo_NoText.svg"
-   inkscape:export-filename="\\NETWORKSTORAGE\share\SFI\Images\Marketing\Logo\Logo_NoText_small.png"
-   inkscape:export-xdpi="24.575998"
-   inkscape:export-ydpi="24.575998">
+   sodipodi:docname="Logo_NoText_NoBack.svg">
   <sodipodi:namedview
      showguides="false"
      inkscape:snap-smooth-nodes="true"
@@ -28,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.056568542"
-     inkscape:cx="-517.89541"
-     inkscape:cy="5094.0019"
+     inkscape:zoom="0.079999999"
+     inkscape:cx="3868.9009"
+     inkscape:cy="3262.0799"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
      showborder="true"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1057"
+     inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="892"
      inkscape:window-maximized="1"
@@ -75,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,7 +83,7 @@
      style="display:inline"
      transform="translate(0,1819.6667)">
     <rect
-       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:56.79200363;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:56.79200363;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect1701"
        width="2116.6667"
        height="2116.6667"

@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /services/index.html
+---
+
+<div class="container py-5">
+    <h1>Our Services</h1>
+    <p class="mb-3">Blerb.</p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for service in site.services %}
+        <div class="col">
+            <div class="card">
+                <img src="{{ service.featured_image }}" class="card-img-top" alt="..." width=300>
+                <div class="card-body">
+                    <h5 class="card-title">{{ service.name }}</h5>
+                    <p class="card-text">{{ service.excerpt }}</p>
+                    <a href="{{ service.url }}" class="btn btn-black">Learn More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
