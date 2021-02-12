@@ -5,9 +5,10 @@ permalink: /services/index.html
 
 <div class="container py-5">
     <h1>Our Services</h1>
-    <p class="mb-3">Blerb.</p>
+    <p class="lead mb-3">You want to reach your online audience. Here is what we can do to help.</p>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        {% for service in site.services %}
+        {% assign services = site.services | sort: "order" %}
+        {% for service in services %}
         <div class="col">
             <div class="card">
                 <img src="{{ service.featured_image }}" class="card-img-top" alt="..." width=300>

@@ -13,17 +13,7 @@
                         <a href="/#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu">
-                            {% for product in site.products %}
-                            <li>
-                                <a class="dropdown-item" href="{{product.url}}">{{ product.name }}</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
+                        <a href="/products" class="nav-link">Products</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
                         <a href="/services" class="nav-link">Services</a>

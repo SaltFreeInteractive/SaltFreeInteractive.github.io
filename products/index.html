@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /products/index.html
+---
+
+<div class="container py-5">
+    <h1 class="mb-3">Our Products</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% assign products = site.products %}
+        {% for product in products %}
+        <div class="col">
+            <div class="card">
+                <img src="{{ product.featured_image }}" class="card-img-top" alt="..." width=300>
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p>{{ product.excerpt }}</p>
+                    <a href="{{ product.url }}" class="btn btn-black">Learn More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

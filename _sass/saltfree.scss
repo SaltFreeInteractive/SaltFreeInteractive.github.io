@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;200;400&display=swap');
+$header-font-family: 'Poppins', sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
+
+h1, h2 {
+  font-family: $header-font-family;
+  font-weight: 400;
+}
+
+p, span, a {
+  font-family: $body-font-family;
+}
+
 .footer {
   position: block;
 }
@@ -5,6 +18,12 @@
 .card {
   border: none;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  transform: scale(1.05, 1.05);
 }
 
 .card-footer {
@@ -22,6 +41,10 @@
 
 .posts-container {
   max-width: 760px;
+
+  p {
+    line-height: 1.5;
+  }
 }
 
 .bd-masthead {
@@ -34,21 +57,52 @@
 }
 
 .bd-masthead .lead {
-  font-weight: 400;
   color: #495057;
+}
+
+.lead {
+  font-weight: 400;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
 
-@media (min-width: 1200px)
-{
+.nav-pills > li > a.active {
+  color: #fff !important;
+  background-color: map-get($theme-colors, "black") !important;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+.nav-pills > li > a {
+  color: map-get($theme-colors, "black") !important;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+
+  iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
   .bd-masthead h1 {
     font-size: 4rem;
   }
 
   .bd-masthead .lead {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .posts-container {
+    font-size: 18px;
   }
 }
