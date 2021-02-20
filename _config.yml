@@ -21,7 +21,7 @@
 title: Salt Free Interactive
 email: contact@saltfreeinteractive.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the official site of Salt Free Interactive, a software development studio in southeast Michigan.
+  The official site of Salt Free Interactive.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: saltfreeint

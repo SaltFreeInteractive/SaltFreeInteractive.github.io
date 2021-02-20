@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: breakdown
 name: Stardust Hyperdrive
 redirect_from:
 - /products/StardustHyperdrive/
