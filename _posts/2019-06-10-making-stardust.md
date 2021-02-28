@@ -3,10 +3,9 @@ layout: post
 title:  "Making Stardust"
 author: Ryan Soulard
 date:   2019-06-10 00:00:00 -0500
-tags:
-  - Stardust Hyperdrive
-  - Game Development
-  - test
+categories:
+  - game-development
+  - stardust-hyperdrive
 featured_image: /assets/images/blog/making-stardust/ship.png
 featured_video: https://www.youtube.com/embed/B3Zm_opwjMQ
 ---

@@ -20,31 +20,32 @@ layout: default
     </div>
 </div>
 
-<div class="container pb-5 position-relative">
-    <div class="row py-5">
-        {% assign sections = page.sections %}
-        <aside class="col-md-3 d-none d-lg-block" id="product-sidebar">
-            <div class="py-3 sticky-top" id="sidebar">
-                <img class="rounded-2 shadow mb-3" src="{{ page.featured_image }}" alt="Logo" width=200>
-                <ul class="nav nav-pills flex-md-column">
-                    <li>
-                        <a href="#About" class="nav-link active">About</a>
-                    </li>
-                    {% for section in sections %}
-                    <li class="nav-item py-1">
-                        <a href="#{{ section }}" class="nav-link">{{ section }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
+{% assign posts = site.posts | where: "categories", page.category %}
+{% if posts.size > 0 %}
+<div>
+    <div class="container">
+        <h1 class="mb-3">Lastest Blog Posts</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            {% for post in posts limit:3 %}
+            <div class="col">
+                <div class="card border-black h-100">
+                    <img src="{{ post.featured_image }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a class="stretched-link" href="{{ post.url }}"></a>
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.excerpt }}</p>
+                    </div>
+                    <div class="card-footer">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <small class="text-muted">{{ post.date | date: date_format }}</small>
+                    </div>
+                </div>
             </div>
-        </aside>
-        <main class="col breakdown-container mx-auto px-1">
-            <div class="d-lg-none">
-                <img class="rounded shadow mx-auto mb-3 d-block" src="{{ page.featured_image }}" alt="Logo" width=300>
-                <h1 class="text-center">{{ page.name }}</h1>
-            </div>
-            <h1 class="d-none d-lg-block mb-3" id="About">{{ page.name }}</h1>
-            {{ content }}
-        </main>
+            {% endfor %}
+        </div>
     </div>
 </div>
+{% endif %}
+
+{{ page.content | remove: page.excerpt}}
