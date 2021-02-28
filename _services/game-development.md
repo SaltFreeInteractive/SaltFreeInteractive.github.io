@@ -2,6 +2,7 @@
 layout: breakdown
 name: Game Development
 featured_image: /assets/images/services/games.svg
+banner_image: /assets/images/services/games_dark.svg
 order: 0
 excerpt_separator: <!--more-->
 ---

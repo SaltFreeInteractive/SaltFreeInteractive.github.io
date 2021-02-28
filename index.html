@@ -36,9 +36,9 @@ layout: default
             <div class="card border-black h-100">
                 <img src="{{ post.featured_image }}" class="card-img-top" alt="...">
                 <div class="card-body">
+                    <a class="stretched-link" href="{{ post.url }}"></a>
                     <h5 class="card-title">{{ post.title }}</h5>
                     <p class="card-text">{{ post.excerpt }}</p>
-                    <a href="{{ post.url }}" class="btn btn-black">Read More</a>
                 </div>
                 <div class="card-footer">
                     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -73,7 +73,7 @@ layout: default
                     <h5 class="card-title">Games</h5>
                     {% assign game-development = site.services | where: "name", "Game Development" | first %}
                     <p class="card-text">{{ game-development.excerpt }}</p>
-                    <a href="{{ game-development.url }}" class="btn btn-black">Learn More</a>
+                    <a class="stretched-link" href="{{ game-development.url }}"></a>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@ layout: default
                     {% assign website-creation = site.services | where: "name", "Website Creation" | first %}
                     <p class="card-text">{{ website-creation.excerpt }}
                     </p>
-                    <a href="{{ website-creation.url }}" class="btn btn-black">Learn More</a>
+                    <a class="stretched-link" href="{{ website-creation.url }}"></a>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@ layout: default
                     <h5 class="card-title">Media</h5>
                     {% assign media-creation = site.services | where: "name", "Media Creation" | first %}
                     <p class="card-text">{{ media-creation.excerpt }}</p>
-                    <a href="{{ media-creation.url }}" class="btn btn-black">Learn More</a>
+                    <a class="stretched-link" href="{{ media-creation.url }}"></a>
                 </div>
             </div>
         </div>
