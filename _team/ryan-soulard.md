@@ -4,5 +4,6 @@ avatar: /assets/images/avatars/ryan.jpg
 github: rsoulard
 itch: scrapmetal134
 twitter: scrapmetal134
+linkedIn: ryansoulard
 ---
-Software developer, Michigander and Eagle Scout.
+Owner and Lead Developer
